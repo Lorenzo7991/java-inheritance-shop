@@ -44,10 +44,23 @@ public class Smartphone extends Product {
         this.memory = memory;
     }
 
+    // Override the toString method to provide textual representation of Smartphone obj
+    @Override
+    public String toString() {
+        return "Smartphone:\n" +
+                "Name: " + getName() + "\n" +
+                "Description: " + getDescription() + "\n" +
+                "Price: " + getPrice() + "\n" +
+                "VAT: " + getVat() + "\n" +
+                "IMEI: " + imei + "\n" +
+                "Memory: " + memory;
+    }
+
+
     // Override directive to include IMEI code in getExtendedName
     @Override
     public String getExtendedName() {
-        return super.getExtendedName() + " / " + imei;
+        return super.getExtendedName() + imei;
     }
 
 }

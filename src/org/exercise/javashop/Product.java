@@ -66,6 +66,6 @@ public class Product {
 
     // Get method to obtain extended name with code product
     public String getExtendedName() {
-        return getCode() + "/" + name;
+        return getCode() + name;
     }
 }
